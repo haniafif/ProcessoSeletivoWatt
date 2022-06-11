@@ -305,6 +305,13 @@ header button:active{
     #whats:active{
         transform: scale(1);
     }
+
+    #logo{
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+        transform: scale(.85);
+    }
 }
 
 @media (max-width: 367px) {
@@ -327,14 +334,6 @@ header button:active{
 
     #currency{
         font-size: 1.5rem;
-    }
-
-    #menu{
-        transform: scale(.35);
-    }
-    
-    #menu:hover{
-        transform: scale(.5);
     }
 
     #whats{
