@@ -240,9 +240,6 @@ header button:active{
 
 /* @@@@@@@@@@@@@@@@@@ FOOTER @@@@@@@@@@@@@@@@@ */
 
-
-
-
 #whats{
     position: fixed;
     bottom: 6%;
@@ -296,6 +293,14 @@ header button:active{
     #menu:hover{
         transform: scale(.65);
     }
+
+    #whats{
+        transform: scale(.8);
+    }
+    
+    #whats:hover{
+        transform: scale(1);
+    }
 }
 
 @media (max-width: 367px) {
@@ -326,5 +331,13 @@ header button:active{
     
     #menu:hover{
         transform: scale(.6);
+    }
+
+    #whats{
+        transform: scale(.7);
+    }
+    
+    #whats:hover{
+        transform: scale(.85);
     }
 }
