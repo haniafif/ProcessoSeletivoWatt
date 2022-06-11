@@ -170,7 +170,7 @@ header button:active{
 
     text-align: center;
 
-    background-image: url(Imagens/131020-abstract-blue-and-yellow-polygonal-triangle-background.jpg);
+    background-image: url(Imagens/teste.jpg);
     background-position: top;
     background-size: cover;
 
@@ -287,11 +287,11 @@ header button:active{
     }
 
     #menu{
-        transform: scale(.5);
+        transform: scale(.45);
     }
     
     #menu:hover{
-        transform: scale(.65);
+        transform: scale(.55);
     }
 
     #whats{
@@ -326,11 +326,11 @@ header button:active{
     }
 
     #menu{
-        transform: scale(.45);
+        transform: scale(.35);
     }
     
     #menu:hover{
-        transform: scale(.6);
+        transform: scale(.5);
     }
 
     #whats{
