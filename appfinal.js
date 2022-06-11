@@ -34,11 +34,11 @@ function aparecer() {
         var economia = document.getElementById("economia1")
         var valoreconomia1 = custo/5 * 12
 
-        valoreconomia1 = valoreconomia1.toFixed(2)
+        valoreconomia1 = valoreconomia1.toFixed(0)
 
         var valoreconomia2 = custo/10 * 12
 
-        valoreconomia2 = valoreconomia2.toFixed(2)
+        valoreconomia2 = valoreconomia2.toFixed(0)
         economia.innerHTML = `R$ ${valoreconomia1}`
         economia = document.getElementById("economia2")
         economia.innerHTML = `R$ ${valoreconomia2}`
@@ -51,7 +51,7 @@ function aparecer() {
         var economia = document.getElementById("economia3")
         var valoreconomia3 = custo/4 * 12
 
-        valoreconomia3 = valoreconomia3.toFixed(2)
+        valoreconomia3 = valoreconomia3.toFixed(0)
         economia.innerHTML = `R$ ${valoreconomia3}`
     }
 
@@ -62,8 +62,8 @@ function aparecer() {
         var economia = document.getElementById("economia4")
         var valoreconomia4 = custo/10 * 36
 
-        valoreconomia4 = valoreconomia4.toFixed(2)
-        economia.innerHTML = `${valoreconomia4} R$`
+        valoreconomia4 = valoreconomia4.toFixed(0)
+        economia.innerHTML = `R$ ${valoreconomia4}`
     }
 
     if (custo < 1000) {

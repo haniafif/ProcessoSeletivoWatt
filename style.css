@@ -31,14 +31,11 @@ body {
 
     font-family: 'Roboto', sans-serif;
 }
-  
-#raio {
-  display: flex;
-}
 
 #logo{
   display: flex;
   justify-content: center;
+  margin-top: 2rem;
 }
 
 /* @@@@@@@@@@@@@@@ MAIN @@@@@@@@@@@@@@@@@ */
@@ -48,7 +45,7 @@ h1{
   text-align: center;
   color: var(--blue);
 
-  margin-top: 15vh;
+  margin-top: 13vh;
 }
 
 #i{

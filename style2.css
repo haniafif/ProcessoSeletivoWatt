@@ -37,11 +37,10 @@ body{
     animation-iteration-count: 1;
 }
 
+
 .wrapper {
     width: min(50rem,100%);
-    margin-inline: auto;
     margin: 0 auto;
-    max-width: 100%;
 }
 
 #raio {
@@ -51,12 +50,25 @@ body{
 #logo{
     display: flex;
     justify-content: center;
+    margin-top: 1rem;
 }
 
 /* @@@@@@@@@@@@@@@@@@ HEADER @@@@@@@@@@@@@@@@@ */
 
 header{
     text-align: center;
+}
+
+#menu{
+    position: absolute;
+    top: 1%;
+    right: 2%;
+    transform: scale(.56);
+    cursor: pointer;
+}
+
+#menu:hover{
+    transform: scale(.70);
 }
 
 header h1{
@@ -92,26 +104,28 @@ header p{
 
 #barra{
     height: 2rem;
+    width: 8rem;
+    margin-right: 1rem;
 
     font-size: 3rem;
 }
 
 header input{
-    color: var(--laranja);
+    color: orangered;
 
-    text-align: center;
+    text-align: right;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bolder;
-    font-size: 2.4rem;
+    font-size: 2rem;
 
 
-    width: 12rem;
+    width: 12.5rem;
     height: 5rem;
     margin-top: 2rem;
 
     background-color: rgba(255, 255, 255, 0);
     border-radius: 1rem;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.041);
     border: none;
 }
 
@@ -132,6 +146,13 @@ header button:active{
     box-shadow: inset 1px 1px 1px 1px black;
 }
 
+#currency{
+    font-size: 2rem;
+    color: orangered;
+    margin-right: -3rem;
+   
+    font-weight: 1000;
+}
 /* @@@@@@@@@@@@@@@@@@ OFERTAS @@@@@@@@@@@@@@@@@ */
 
 .ofertas{
@@ -149,8 +170,8 @@ header button:active{
 
     text-align: center;
 
-    background-image: url(Imagens/c374b256e7554e7674ae097426e30847.jpg);
-    background-repeat: none;
+    background-image: url(Imagens/131020-abstract-blue-and-yellow-polygonal-triangle-background.jpg);
+    background-position: top;
     background-size: cover;
 
     animation: fadeInAnimation ease 1s;
@@ -163,7 +184,7 @@ header button:active{
 }
 
 .oferta h1{
-    color: var(--azulclaro);
+    color: var(--yellow);
 
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -195,8 +216,14 @@ header button:active{
     box-shadow: inset 0px 0px 2px 1px rgba(252, 252, 252, 0.438);
 }
 
+.oferta:hover{
+    transform: scale(1.1);
+}
+
 .aparecer{
     display: block;
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
 }
 
 #resultado{
@@ -211,6 +238,23 @@ header button:active{
     font-weight: 1000;
 }
 
+/* @@@@@@@@@@@@@@@@@@ FOOTER @@@@@@@@@@@@@@@@@ */
+
+
+
+
+#whats{
+    position: fixed;
+    bottom: 6%;
+    right: 4%;
+    cursor: pointer;
+}
+
+#whats:hover{
+    transform: scale(1.2);
+}
+
+
 /* @@@@@@@@@@@@@@@@ RESPONSIVIDADE @@@@@@@@@@@@@ */
 
 @media (max-width: 640px) {
@@ -223,12 +267,12 @@ header button:active{
 
 @media (max-width: 475px){
     #barra{
-        width: 8rem;
+        width: 6rem;
     }
 
     header input{
-        width: 8rem;
-        font-size: 1.8rem;
+        width: 10rem;
+        font-size: 1.6rem;
     }
 
     header h1{
@@ -240,11 +284,27 @@ header button:active{
         font-size: 1rem;
         
     }
+
+    #currency{
+        font-size: 1.7rem;
+    }
+
+    #menu{
+        transform: scale(.5);
+    }
+    
+    #menu:hover{
+        transform: scale(.65);
+    }
 }
 
-@media (max-width: 357px) {
+@media (max-width: 367px) {
+    #barra{
+        width: 5rem;
+    }
+
     header input{
-        width: 6rem;
+        width: 10rem;
         font-size: 1.6rem;
     }
 
@@ -254,5 +314,17 @@ header button:active{
 
     header p{
         font-size: .8rem;
+    }
+
+    #currency{
+        font-size: 1.5rem;
+    }
+
+    #menu{
+        transform: scale(.45);
+    }
+    
+    #menu:hover{
+        transform: scale(.6);
     }
 }
