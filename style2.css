@@ -299,6 +299,10 @@ header button:active{
     }
     
     #whats:hover{
+        transform: none;
+    }
+
+    #whats:active{
         transform: scale(1);
     }
 }
@@ -334,10 +338,14 @@ header button:active{
     }
 
     #whats{
-        transform: scale(.7);
+        transform: scale(.8);
     }
     
     #whats:hover{
-        transform: scale(.85);
+        transform: none;
+    }
+
+    #whats:active{
+        transform: scale(.9);
     }
 }
